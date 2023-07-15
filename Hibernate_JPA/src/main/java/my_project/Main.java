@@ -16,7 +16,7 @@ public class Main {
 
 //        Student student = new Student("TeoNew", 10, "School 1");
 //        em.persist(student);
-        Student student = new Student("LEOOOO", 18, "School 2");
+        Student student = new Student("MEOO", 18, "School 2");
         em.persist(student);
 //
 //        student.setName("TeoUpdated");
