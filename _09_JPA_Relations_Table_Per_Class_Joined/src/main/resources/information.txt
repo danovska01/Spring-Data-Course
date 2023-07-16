@@ -1,0 +1,11 @@
+Joined Strategy
+
+▪ Disadvantages:
+▪ Multiple JOINS - for deep hierarchies it may give poor performance
+
+
+▪ Advantages:
+▪ No NULL values
+▪ No repeating information
+▪ Foreign keys involved
+▪ Reduced changes in schema on superclass changes
