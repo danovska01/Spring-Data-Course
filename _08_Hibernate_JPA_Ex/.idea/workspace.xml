@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7853d6ce-5cd4-4c7a-ab66-e579986400e6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/_12_EmployeesMaximumSalaries.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/_13_RemoveTowns.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,9 +49,9 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application._13_RemoveTowns">
-    <configuration name="_09_FindTheLatest10Projects" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_09_FindTheLatest10Projects" />
+  <component name="RunManager" selected="Application.HibernateMain">
+    <configuration name="HibernateMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HibernateMain" />
       <module name="introtohibernate" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -90,11 +87,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HibernateMain" />
         <item itemvalue="Application._13_RemoveTowns" />
         <item itemvalue="Application._12_EmployeesMaximumSalaries" />
         <item itemvalue="Application._11_FindEmployeesByFirstName" />
         <item itemvalue="Application._10_IncreaseSalaries" />
-        <item itemvalue="Application._09_FindTheLatest10Projects" />
       </list>
     </recent_temporary>
   </component>
@@ -109,6 +106,8 @@
       <workItem from="1689427534623" duration="6939000" />
       <workItem from="1689490944078" duration="4008000" />
       <workItem from="1689494976928" duration="5297000" />
+      <workItem from="1689515444258" duration="135000" />
+      <workItem from="1689515596872" duration="68000" />
     </task>
     <task id="LOCAL-00001" summary="add one more task">
       <option name="closed" value="true" />

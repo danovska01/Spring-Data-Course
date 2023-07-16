@@ -6,7 +6,7 @@
     <session-factory>
 
         <property name="hibernate.connection.url">
-            jdbc:mysql://localhost:3306/soft_uniO?createDatabaseIfNotExist=true
+            jdbc:mysql://localhost:3306/soft_uniPOO?createDatabaseIfNotExist=true
         </property>
         <property name="hibernate.connection.username">
             root
