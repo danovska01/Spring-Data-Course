@@ -1,0 +1,14 @@
+Table Per Class Strategy: Conclusion
+
+▪ Disadvantages:
+
+▪ Repeating information in each table
+▪ Changes in super class involves changes in all subclass tables
+▪ No foreign keys involved (unrelated tables)
+
+
+▪ Advantages:
+
+▪ No NULL values – no unneeded fields
+▪ Simple style to implement inheritance
+mapping

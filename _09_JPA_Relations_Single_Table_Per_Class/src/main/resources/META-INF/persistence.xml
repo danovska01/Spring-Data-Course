@@ -8,7 +8,7 @@
     <persistence-unit name="PU_Name">
         <properties>
             <property name="hibernate.connection.url"
-                      value="jdbc:mysql://localhost:3306/jpa_relations?createDatabaseIfNotExist=true&amp;useSSL=false&amp;serverTimezone=UTC"/>
+                      value="jdbc:mysql://localhost:3306/jpa_single_table_per_class?createDatabaseIfNotExist=true&amp;useSSL=false&amp;serverTimezone=UTC"/>
             <property name="hibernate.connection.username" value="root"/>
             <property name="hibernate.connection.password" value="Badger3802!!"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>

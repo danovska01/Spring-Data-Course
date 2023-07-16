@@ -1,0 +1,13 @@
+JPA Inheritance Strategies: Implemented by the javax.persistence.Inheritance annotation
+
+The following mapping strategies are used to map the entity data to the underlying database:
+
+▪ A single table per class hierarchy
+- Table creation for each entity
+- A table defined for each concrete class in the inheritance
+- Allows inheritance to be used in the object model, when it does not exist in the data model
+- Querying root or branch classes can be very difficult and inefficient
+
+▪ A table per concrete entity class
+
+▪ "Join" strategy – mapping common fields in a single table
