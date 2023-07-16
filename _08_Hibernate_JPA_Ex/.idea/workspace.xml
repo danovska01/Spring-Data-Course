@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7853d6ce-5cd4-4c7a-ab66-e579986400e6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/_08_GetEmployeesWithProject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/_09_FindTheLatest10Projects.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/_02_ChangeCasing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_02_ChangeCasing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/_07_ListAddressees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_07_ListAddressees.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/_08_GetEmployeesWithProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_08_GetEmployeesWithProject.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,14 +50,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application._08_GetEmployeesWithProject">
-    <configuration name="_04_RichEmployeesFirstNames" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_04_RichEmployeesFirstNames" />
-      <module name="introtohibernate" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application._09_FindTheLatest10Projects">
     <configuration name="_05_EmployeesFromDepartment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_05_EmployeesFromDepartment" />
       <module name="introtohibernate" />
@@ -89,13 +79,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_09_FindTheLatest10Projects" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_09_FindTheLatest10Projects" />
+      <module name="introtohibernate" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._09_FindTheLatest10Projects" />
         <item itemvalue="Application._08_GetEmployeesWithProject" />
         <item itemvalue="Application._07_ListAddressees" />
         <item itemvalue="Application._06_InsertAddress" />
         <item itemvalue="Application._05_EmployeesFromDepartment" />
-        <item itemvalue="Application._04_RichEmployeesFirstNames" />
       </list>
     </recent_temporary>
   </component>
@@ -108,12 +105,26 @@
       <option name="presentableId" value="Default" />
       <updated>1689427533627</updated>
       <workItem from="1689427534623" duration="6939000" />
-      <workItem from="1689490944078" duration="3384000" />
+      <workItem from="1689490944078" duration="4008000" />
+      <workItem from="1689494976928" duration="354000" />
     </task>
+    <task id="LOCAL-00001" summary="add one more task">
+      <option name="closed" value="true" />
+      <created>1689494461831</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1689494461831</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add one more task" />
+    <option name="LAST_COMMIT_MESSAGE" value="add one more task" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

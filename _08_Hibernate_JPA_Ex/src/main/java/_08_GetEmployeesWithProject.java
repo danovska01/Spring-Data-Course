@@ -18,6 +18,9 @@ public class _08_GetEmployeesWithProject {
         //Get an employee by his/her id
         int id = Integer.parseInt(scanner.nextLine());
 
+        //Print only his/her first name, last name, job title and projects (only their names).
+        // The projects should be ordered by name (ascending).
+
         entityManager
                 .createQuery("SELECT e FROM Employee e" +
                                 " WHERE e.id= :id" +
