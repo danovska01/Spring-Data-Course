@@ -1,4 +1,5 @@
 import entities.Department;
+import entities.Employee;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -24,16 +25,24 @@ public class _10_IncreaseSalaries {
             "FROM Department d WHERE d.name IN (:names)",
                     Department.class)
             .setParameter("names", departmentNames)
-            .getResultList();
+                .getResultList();
 
         entityManager
-            .createQuery("UPDATE Employee e" +
-                " SET e.salary = e.salary * 1.12" +
-                " WHERE e.department IN (:departments)")
-            .setParameter("departments", departments)
-            .executeUpdate();
+                .createQuery("UPDATE Employee e" +
+                        " SET e.salary = e.salary * 1.12" +
+                        " WHERE e.department IN (:departments)")
+                .setParameter("departments", departments)
+                .executeUpdate();
 
         // Fetch users in departments & print info
+        for (Department department : departments) {
+            System.out.println("Department: " + department.getName());
+            for (Employee employee : department.getEmployees()) {
+                System.out.println(employee.getFirstName() + " " + employee.getLastName());
+                System.out.println("($" + employee.getSalary() + ")");
+                System.out.println("----------------------");
+            }
+        }
 
         entityManager.getTransaction().commit();
         entityManager.close();
