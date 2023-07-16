@@ -16,8 +16,9 @@ public class _02_ChangeCasing {
         EntityManager entityManager = factory.createEntityManager();
         entityManager.getTransaction().begin();
 
-        // entityManager.createQuery("UPDATE Town t SET t.name = lower(t.name) " +
-        //                "WHERE length(t.name) >= 5");
+//         entityManager.createQuery("UPDATE Town t SET t.name = lower(t.name) " +
+//                        "WHERE length(t.name) >= 5");
+
         Query from_town = entityManager
                 .createQuery("SELECT t FROM Town t", Town.class);
         List<Town> resultList = from_town.getResultList();
@@ -32,6 +33,7 @@ public class _02_ChangeCasing {
                 entityManager.persist(town);
             }
         }
+
 
         entityManager.getTransaction().commit();
     }

@@ -3,7 +3,9 @@ import entities.Address;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class _07_ListAddressees {
 
@@ -23,6 +25,7 @@ public class _07_ListAddressees {
             .setMaxResults(10)
             .getResultStream()
             .forEach(System.out::println);
+
 
         entityManager.getTransaction().commit();
         entityManager.close();
