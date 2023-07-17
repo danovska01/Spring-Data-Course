@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7853d6ce-5cd4-4c7a-ab66-e579986400e6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,9 +48,9 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HibernateMain">
-    <configuration name="HibernateMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HibernateMain" />
+  <component name="RunManager" selected="Application._000_HibernateMain">
+    <configuration name="_000_HibernateMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_000_HibernateMain" />
       <module name="introtohibernate" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -87,7 +86,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HibernateMain" />
+        <item itemvalue="Application._000_HibernateMain" />
         <item itemvalue="Application._13_RemoveTowns" />
         <item itemvalue="Application._12_EmployeesMaximumSalaries" />
         <item itemvalue="Application._11_FindEmployeesByFirstName" />
@@ -108,6 +107,7 @@
       <workItem from="1689494976928" duration="5297000" />
       <workItem from="1689515444258" duration="135000" />
       <workItem from="1689515596872" duration="68000" />
+      <workItem from="1689612010110" duration="127000" />
     </task>
     <task id="LOCAL-00001" summary="add one more task">
       <option name="closed" value="true" />
@@ -133,7 +133,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689497004215</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add modifications">
+      <option name="closed" value="true" />
+      <created>1689612128262</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689612128262</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,7 +155,8 @@
     <MESSAGE value="add one more task" />
     <MESSAGE value="task 9" />
     <MESSAGE value="task 11" />
-    <option name="LAST_COMMIT_MESSAGE" value="task 11" />
+    <MESSAGE value="add modifications" />
+    <option name="LAST_COMMIT_MESSAGE" value="add modifications" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
