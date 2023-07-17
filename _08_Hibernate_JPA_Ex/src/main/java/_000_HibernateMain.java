@@ -3,7 +3,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-public class HibernateMain {
+public class _000_HibernateMain {
 
     public static void main(String[] args) {
         Configuration configuration = new Configuration();

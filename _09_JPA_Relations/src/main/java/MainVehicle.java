@@ -1,7 +1,7 @@
-import entities.vehicle.Bike;
-import entities.vehicle.Car;
-import entities.vehicle.Truck;
-import entities.vehicle.Vehicle;
+import entities.vehicle_Inheritance_ex.Bike;
+import entities.vehicle_Inheritance_ex.Car;
+import entities.vehicle_Inheritance_ex.Truck;
+import entities.vehicle_Inheritance_ex.Vehicle;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

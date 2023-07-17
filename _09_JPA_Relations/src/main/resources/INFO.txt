@@ -1,0 +1,15 @@
+
+
+
+▪ Relational databases don't support inheritance
+▪ It is implemented by JPA:
+▪ SINGLE_TABLE
+▪ TABLE_PER_CLASS
+▪ JOINED
+
+
+
+▪ Table relations are Un/Bidirectional
+▪ One-to-One
+▪ Many-to-One
+▪ Many-to-Many
