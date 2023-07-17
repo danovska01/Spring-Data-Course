@@ -5,7 +5,7 @@
              http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
              version="2.0">
 
-    <persistence-unit name="PU_Name">
+    <persistence-unit name="PU">
         <properties>
             <property name="hibernate.connection.url"
                       value="jdbc:mysql://localhost:3306/jpa_relations?createDatabaseIfNotExist=true&amp;useSSL=false&amp;serverTimezone=UTC"/>

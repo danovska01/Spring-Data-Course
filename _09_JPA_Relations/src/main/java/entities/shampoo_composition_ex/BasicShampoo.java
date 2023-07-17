@@ -1,4 +1,4 @@
-package entities.shampoo;
+package entities.shampoo_composition_ex;
 
 import javax.persistence.*;
 import java.util.Collections;
