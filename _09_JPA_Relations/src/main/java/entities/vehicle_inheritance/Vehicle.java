@@ -1,4 +1,4 @@
-package entities.vehicle;
+package entities.vehicle_inheritance;
 
 import javax.persistence.*;
 
