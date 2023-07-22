@@ -10,9 +10,6 @@ public class Medicament {
     private Long id;
     @Column(name = "medicament_name")
     private String name;
-    @ManyToOne
-    @JoinColumn(name = "patient_id")
-    private Patient patient;
 
     public Medicament(String name) {
         this.name = name;
@@ -38,13 +35,6 @@ public class Medicament {
         this.name = name;
     }
 
-    public Patient getPatient() {
-        return patient;
-    }
-
-    public void setPatient(Patient patient) {
-        this.patient = patient;
-    }
 
 
 }

@@ -1,3 +1,5 @@
+package _demo;
+
 public enum AccountType {
     FREE("FREE"),
     PLATINUM("PLATINUM"),

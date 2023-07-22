@@ -1,3 +1,5 @@
+package _demo;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -14,7 +16,7 @@ public class Main {
         User user = new User("marina", AccountType.PLATINUM);
         entityManager.persist(user);
 
-        User found = entityManager.find(User.class, 1);
+        User found = entityManager.find(User.class, 2);
 
         System.out.println(found.getType().toString());
 

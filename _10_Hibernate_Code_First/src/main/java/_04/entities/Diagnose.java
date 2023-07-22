@@ -14,10 +14,6 @@ public class Diagnose {
     @Column(name = "comments")
     private String comments;
 
-    @ManyToOne
-    @JoinColumn(name = "patient_id")
-    private Patient patient;
-
     public Diagnose() {
 
     }
@@ -37,15 +33,6 @@ public class Diagnose {
     public void setComments(String comments) {
         this.comments = comments;
     }
-
-    public Patient getPatient() {
-        return patient;
-    }
-
-    public void setPatient(Patient patient) {
-        this.patient = patient;
-    }
-
 
     public int getId() {
         return id;

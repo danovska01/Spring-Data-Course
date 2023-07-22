@@ -16,8 +16,9 @@ public class Visitation {
     @Column
     private String comments;
     @ManyToOne
-    @JoinColumn(name = "patient_id")
+    @JoinColumn(name = "patient_id", referencedColumnName = "id")
     private Patient patient;
+
 
     public Visitation() {
 

@@ -1,3 +1,5 @@
+package _demo;
+
 import javax.persistence.*;
 
 @Entity(name = "demos")

@@ -26,19 +26,42 @@ public class Patient {
     @Column(name = "has_medical_insurance", nullable = false)
     private boolean hasMedicalInsurance;
 
-    @OneToMany(targetEntity = Diagnose.class, mappedBy = "patient")
+
+    @ManyToMany
+    @JoinTable(
+            name = "_04_patients_diagnoses",
+            joinColumns =
+            @JoinColumn(name = "patients_id", referencedColumnName = "id"),
+            inverseJoinColumns =
+            @JoinColumn(name = "diagnoses_id", referencedColumnName = "id")
+    )
     private Set<Diagnose> diagnoses;
-
-    @OneToMany(targetEntity = Medicament.class, mappedBy = "patient")
+    @ManyToMany
+    @JoinTable(
+            name = "_04_patients_medicaments",
+            joinColumns =
+            @JoinColumn(name = "patients_id", referencedColumnName = "id"),
+            inverseJoinColumns =
+            @JoinColumn(name = "medicaments_id", referencedColumnName = "id")
+    )
     private Set<Medicament> medicaments;
-
-    @OneToMany(targetEntity = Visitation.class, mappedBy = "patient")
-    private Set<Visitation> visitations;
 
     public Patient(String firstName, String lastName, Date dateOfBirth) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.dateOfBirth = dateOfBirth;
+        this.diagnoses = getDiagnoses();
+    }
+
+    public Set<Diagnose> getDiagnoses() {
+        return diagnoses;
+    }
+
+//    @OneToMany(targetEntity = Visitation.class, mappedBy = "patient")
+//    private Set<Visitation> visitations;
+
+    public void setDiagnoses(Set<Diagnose> diagnoses) {
+        this.diagnoses = diagnoses;
     }
 
     public Patient() {
@@ -101,13 +124,6 @@ public class Patient {
         this.hasMedicalInsurance = hasMedicalInsurance;
     }
 
-    public Set<Diagnose> getDiagnoses() {
-        return diagnoses;
-    }
-
-    public void setDiagnoses(Set<Diagnose> diagnoses) {
-        this.diagnoses = diagnoses;
-    }
 
     public Set<Medicament> getMedicaments() {
         return medicaments;
@@ -117,13 +133,13 @@ public class Patient {
         this.medicaments = medicaments;
     }
 
-    public Set<Visitation> getVisitations() {
-        return visitations;
-    }
-
-    public void setVisitations(Set<Visitation> visitations) {
-        this.visitations = visitations;
-    }
+//    public Set<Visitation> getVisitations() {
+//        return visitations;
+//    }
+//
+//    public void setVisitations(Set<Visitation> visitations) {
+//        this.visitations = visitations;
+//    }
 
 
     @Override
@@ -133,6 +149,7 @@ public class Patient {
         Patient patient = (Patient) o;
         return Objects.equals(firstName, patient.firstName) && Objects.equals(lastName, patient.lastName) && Objects.equals(dateOfBirth, patient.dateOfBirth);
     }
+
 
     @Override
     public int hashCode() {
