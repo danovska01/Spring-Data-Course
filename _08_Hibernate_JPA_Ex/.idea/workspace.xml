@@ -5,7 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7853d6ce-5cd4-4c7a-ab66-e579986400e6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Demo_Spring_With_Mongo/src/main/java/com/example/demo_spring_with_mongo/models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Demo_Spring_With_Mongo/src/main/java/com/example/demo_spring_with_mongo/repositories/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Demo_Spring_With_Mongo/src/main/java/com/example/demo_spring_with_mongo/services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_11_SpringDataIntro/src/main/java/bg/softuni/accounts/AccountsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_11_SpringDataIntro/src/main/java/bg/softuni/accounts/ConsoleRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_11_SpringDataIntro/src/main/java/bg/softuni/accounts/models/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_11_SpringDataIntro/src/main/java/bg/softuni/accounts/models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_11_SpringDataIntro/src/main/java/bg/softuni/accounts/repositories/AccountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_11_SpringDataIntro/src/main/java/bg/softuni/accounts/repositories/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_11_SpringDataIntro/src/main/java/bg/softuni/accounts/services/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_11_SpringDataIntro/src/main/java/bg/softuni/accounts/services/AccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_11_SpringDataIntro/src/main/java/bg/softuni/accounts/services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_11_SpringDataIntro/src/main/java/bg/softuni/accounts/services/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_11_SpringDataIntro/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_11_SpringDataIntro/src/test/java/bg/softuni/accounts/AccountsApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +122,7 @@
       <workItem from="1689515444258" duration="135000" />
       <workItem from="1689515596872" duration="68000" />
       <workItem from="1689612010110" duration="127000" />
+      <workItem from="1690141537274" duration="131000" />
     </task>
     <task id="LOCAL-00001" summary="add one more task">
       <option name="closed" value="true" />
