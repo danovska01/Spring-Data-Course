@@ -1,7 +1,7 @@
 package com.example.demo_spring_with_mongo.models;
-
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+
 
 import java.util.Date;
 import java.util.HashMap;
@@ -12,6 +12,8 @@ public class User {
 
     @Id
     private String userId;
+
+    private int age;
     private String name;
     private Date creationDate = new Date();
     private Map<String, String> userSettings = new HashMap<>();
@@ -52,5 +54,12 @@ public class User {
 
     public void setUserSettings(Map<String, String> userSettings) {
         this.userSettings = userSettings;
+    }
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 }
