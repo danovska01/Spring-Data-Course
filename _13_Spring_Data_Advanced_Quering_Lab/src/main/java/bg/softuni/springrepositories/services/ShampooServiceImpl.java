@@ -51,4 +51,6 @@ public class ShampooServiceImpl implements ShampooService {
     public List<Shampoo> findAllWithIngredients(List<String> ingredientNames) {
         return shampooRepository.findByIngredientsNameIn(ingredientNames);
     }
+
+
 }
