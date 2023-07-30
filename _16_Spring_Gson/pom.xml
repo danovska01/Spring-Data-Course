@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>_16_Spring_JSON_example</artifactId>
+    <artifactId>_16_Spring_GSON_example</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>_16_Spring_JSON_example</name>
     <description>_16_Spring_JSON_example</description>

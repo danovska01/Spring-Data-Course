@@ -1,5 +1,4 @@
 package com.danovska01.model_mapper_test;
-
 import com.danovska01.model_mapper_test.dto.UserDTO;
 import com.danovska01.model_mapper_test.model.User;
 import com.google.gson.Gson;
