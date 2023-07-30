@@ -29,8 +29,7 @@ public class Game {
     @Column(name = "release_date", nullable = false)
     private LocalDate releaseDate;
 
-    public Game() {
-    }
+    public Game() {}
 
     public Game(String title, String trailerId, String thumbnailUrl, float size, BigDecimal price, String description, LocalDate releaseDate) {
         this.title = title;

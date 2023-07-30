@@ -7,26 +7,29 @@ import com.google.gson.annotations.Expose;
 public class GsonTest {
 
     private static final String json =
-            "{\n" +
-                    "  \"username\": \"mnogoqk\",\n" +
-                    "  \"address\": \"Mladost 4\"\n" +
-                    "}";
+        """
+            {
+              "username": "mnogoqk",
+              "address": "Mladost 4"
+            }
+        """;
 
     public static void main(String[] args) {
         Gson gson = new GsonBuilder()
-                .excludeFieldsWithoutExposeAnnotation()
-                .setPrettyPrinting()
-                .create();
+            .excludeFieldsWithoutExposeAnnotation()
+            .setPrettyPrinting()
+            .create();
 
+//        LoginData loginData = new LoginData(
+//                "mnogoqk","1234");
+//
+//        String result = gson.toJson(loginData);
+//
+//        System.out.println(result);
 
-        LoginData loginData = new LoginData(
-                "mnogoqk", "1234");
-        String result = gson.toJson(loginData);
-        System.out.println(result);
+        LoginData loginData = gson.fromJson(json, LoginData.class);
 
-
-//        LoginData loginData = gson.fromJson(json, LoginData.class);
-//        System.out.println(loginData);
+        System.out.println(loginData);
     }
 
     static class LoginData {

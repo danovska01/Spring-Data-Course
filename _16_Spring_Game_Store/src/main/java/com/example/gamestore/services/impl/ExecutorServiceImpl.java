@@ -17,15 +17,6 @@ import java.util.Optional;
 @Service
 public class ExecutorServiceImpl implements ExecutorService {
 
-    private static final String REGISTER_USER_JSON = "{\"email\":\"pesho22@mail.com\",\"password\":\"1234567\",\"confirmPassword\":\"1234567\",\"fullName\":\"Pesho 22334\"}";
-
-    private static final String LOGIN_USER_JSON = """
-            {
-                "email": "pesho22@mail.com",
-                "password": "1234567"
-            }
-            """;
-
     private final UserService userService;
 
     private final Gson gson;

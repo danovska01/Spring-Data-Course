@@ -5,9 +5,10 @@ import org.springframework.validation.annotation.Validated;
 
 /**
  * Validate the data for registering a user.
- * <p>
+ *
  * Email must be ...
  * Password must be ...
+ *
  */
 @Validated
 public class RegisterDTO {
@@ -36,7 +37,7 @@ public class RegisterDTO {
         int indexOfAt = email.indexOf("@");
         int indexOfDot = email.lastIndexOf(".");
         if (indexOfAt < 0 || indexOfDot < 0 || indexOfAt > indexOfDot) {
-            throw new ValidationException("Email must contain @ and .");
+             throw new ValidationException("Email must contain @ and .");
         }
 
         // TODO: Validate password

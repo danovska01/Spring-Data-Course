@@ -1,8 +1,8 @@
 package com.example.gamestore.entities;
 
-
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 public class ManyEntity {
