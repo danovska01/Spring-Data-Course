@@ -41,6 +41,7 @@ public class ConsoleRunner implements CommandLineRunner {
 
         studentService.create(studentJson);
 
+
         String courseJson = """
                 {
                     "name": "Math",
@@ -49,6 +50,7 @@ public class ConsoleRunner implements CommandLineRunner {
                 """;
 
         courseService.create(courseJson);
+
 
     }
 }

@@ -2,6 +2,8 @@ package bg.softuni.springjson.dtos;
 
 public class CourseDTO {
     private final String name;
+
+
     private final int lengthInWeeks;
 
     public CourseDTO(String name, int lengthInWeeks) {

@@ -24,8 +24,11 @@ public class MainFromJson {
 
         StudentAdditionalInfoDTO studentAdditionalInfoDTO =
                 gson.fromJson(notFormatted, StudentAdditionalInfoDTO.class);
+        StudentAdditionalInfoDTO studentAdditionalInfoDTO1 =
+                gson.fromJson(json, StudentAdditionalInfoDTO.class);
 
         System.out.println(studentAdditionalInfoDTO);
+        System.out.println(studentAdditionalInfoDTO1);
 
         String studentJson = """
                 {
