@@ -18,8 +18,9 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
-import java.io.*;
-import java.nio.file.Path;
+import java.io.ByteArrayInputStream;
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -65,8 +66,14 @@ public class ProductShopRunner implements CommandLineRunner {
 //        // of those products (regardless if they have a buyer or not).
 //        getCategoryStats();
 
-//        this.userService.getUsersWithSoldProductsOrderByCount();
-        // xmlMarshallDemo();
+
+//        //Query 4 - Get all users who have at least 1 product sold. Order them by the number of products sold (from highest to lowest),
+//        //then by last name (ascending). Select only their first and last name, age and for each product - name and price.
+//         this.userService.getUsersWithSoldProductsOrderByCount();
+
+
+//         xmlMarshallDemo();
+//           xmlDemo();
     }
 
     /**
@@ -126,8 +133,8 @@ public class ProductShopRunner implements CommandLineRunner {
         marshaller.marshal(xmlCategoryStatsList, System.out);
 
 
-        File writer =
-            new File("/tmp/stats.xml");
+        File writer = new File("/tmp/stats.xml");
+
 
         writer.createNewFile();
         marshaller.marshal(xmlCategoryStatsList, writer);

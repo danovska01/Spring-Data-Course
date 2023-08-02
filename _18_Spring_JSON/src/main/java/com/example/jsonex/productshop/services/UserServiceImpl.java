@@ -33,11 +33,12 @@ public class UserServiceImpl implements UserService {
             .stream()
             .map(user -> this.mapper.map(user, UserWithSoldProductsDTO.class))
             .collect(Collectors.toList());
+
     }
 
     @Override
     @Transactional
-    public List<User> getUsersWithSoldProductsOrderByCount() {
+    public List<UserWithSoldProductsDTO> getUsersWithSoldProductsOrderByCount() {
         List<User> all = this.userRepository.findAllWithSoldProductsOrderByCount();
 
         all.get(0).getSellingItems().size();
