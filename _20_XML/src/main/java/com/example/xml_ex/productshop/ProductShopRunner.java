@@ -32,11 +32,18 @@ public class ProductShopRunner implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-//        this.seedService.seedProducts();
+//        this.seedService.seedUsers();
+//        this.seedService.seedCategories();
+        this.seedService.seedProducts();
+
+//        this.seedService.seedAll();
+
 
 //        this.productsInRange();
 
-        this.findUserWithSoldProductsAndCounts();
+//        this.findUserWithSoldProductsAndCounts();
+
+
 
     }
 
