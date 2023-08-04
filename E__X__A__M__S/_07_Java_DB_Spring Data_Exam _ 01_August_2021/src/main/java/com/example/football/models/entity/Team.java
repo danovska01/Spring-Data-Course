@@ -89,4 +89,9 @@ public class Team {
     public void setPlayers(Set<Player> players) {
         this.players = players;
     }
+
+    @Override
+    public String toString() {
+        return name + " - " + fanBase;
+    }
 }
