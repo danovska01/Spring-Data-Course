@@ -1,5 +1,7 @@
 package com.example.football.service;
 
+import javax.xml.bind.JAXBException;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 //ToDo - Implement all methods
@@ -8,6 +10,6 @@ public interface StatService {
 
     String readStatsFileContent() throws IOException;
 
-    String importStats();
+    String importStats() throws FileNotFoundException, JAXBException;
 
 }

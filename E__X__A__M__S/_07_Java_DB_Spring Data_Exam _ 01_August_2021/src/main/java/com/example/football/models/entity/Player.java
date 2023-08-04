@@ -4,25 +4,27 @@ import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.Objects;
 
-
-@Table(name = "players")
 @Entity
+@Table(name = "players")
 public class Player {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", nullable = false)
-    private Long id;
-    @Column(name = "first _name", nullable = false)
+    private long id;
+
+    @Column(name = "first_name", nullable = false)
     private String firstName;
+
     @Column(name = "last_name", nullable = false)
     private String lastName;
-    @Column(unique = true, nullable = false)
+
+    @Column(nullable = false, unique = true)
     private String email;
+
     @Column(name = "birth_date", nullable = false)
     private LocalDate birthDate;
 
     @Column(nullable = false)
-    private PlayerPosition playerPosition;
+    private PlayerPosition position;
 
     @ManyToOne(optional = false)
     private Town town;
@@ -33,16 +35,14 @@ public class Player {
     @OneToOne
     private Stat stat;
 
-
     public Player() {
-
     }
 
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -78,12 +78,12 @@ public class Player {
         this.birthDate = birthDate;
     }
 
-    public PlayerPosition getPlayerPosition() {
-        return playerPosition;
+    public PlayerPosition getPosition() {
+        return position;
     }
 
-    public void setPlayerPosition(PlayerPosition playerPosition) {
-        this.playerPosition = playerPosition;
+    public void setPosition(PlayerPosition position) {
+        this.position = position;
     }
 
     public Town getTown() {
@@ -115,11 +115,24 @@ public class Player {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Player player = (Player) o;
-        return Objects.equals(id, player.id) && Objects.equals(email, player.email);
+
+        return id == player.id && Objects.equals(email, player.email);
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(id, email);
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Player - %s %s%n" +
+                        "\tPosition - %s%n" +
+                        "\tTeam - %s%n" +
+                        "\tStadium - %s",
+                this.firstName, this.lastName,
+                this.position.toString(),
+                this.team.getName(),
+                this.team.getStadiumName());
     }
 }

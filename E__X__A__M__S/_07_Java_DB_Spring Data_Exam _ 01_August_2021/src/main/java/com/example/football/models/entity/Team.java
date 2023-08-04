@@ -8,20 +8,19 @@ import java.util.Set;
 public class Team {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", nullable = false)
-    private Long id;
+    private long id;
 
     @Column(nullable = false, unique = true)
     private String name;
 
-    @Column(name = "stadium_name", nullable = false, unique = true)
+    @Column(name = "stadium_name", nullable = false)
     private String stadiumName;
 
     @Column(name = "fan_base", nullable = false)
     private int fanBase;
+
     @Column(nullable = false, columnDefinition = "TEXT")
     private String history;
-
 
     @ManyToOne(optional = false)
     private Town town;
@@ -29,16 +28,14 @@ public class Team {
     @OneToMany(targetEntity = Player.class, mappedBy = "team")
     private Set<Player> players;
 
-
     public Team() {
-
     }
 
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 

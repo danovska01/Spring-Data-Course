@@ -25,22 +25,25 @@ import java.util.stream.Collectors;
 
 @Service
 public class TeamServiceImpl implements TeamService {
-
     private final TeamRepository teamRepository;
     private final TownRepository townRepository;
+
     private final Gson gson;
     private final Validator validator;
     private final ModelMapper modelMapper;
-
 
     @Autowired
     public TeamServiceImpl(TeamRepository teamRepository, TownRepository townRepository) {
         this.teamRepository = teamRepository;
         this.townRepository = townRepository;
-        this.gson = new GsonBuilder().create();
-        this.validator = Validation.buildDefaultValidatorFactory().getValidator();
-        this.modelMapper = new ModelMapper();
 
+        this.gson = new GsonBuilder().create();
+
+        this.validator = Validation
+                .buildDefaultValidatorFactory()
+                .getValidator();
+
+        this.modelMapper = new ModelMapper();
     }
 
     @Override
@@ -51,26 +54,25 @@ public class TeamServiceImpl implements TeamService {
     @Override
     public String readTeamsFileContent() throws IOException {
         Path path = Path.of("src", "main", "resources", "files", "json", "teams.json");
-        return String.join("\n", Files.readAllLines(path));
+
+        return Files.readString(path);
     }
 
     @Override
     public String importTeams() throws IOException {
         String json = this.readTeamsFileContent();
 
-
         ImportTeamDTO[] teamsDTOs = this.gson.fromJson(json, ImportTeamDTO[].class);
 
         return Arrays.stream(teamsDTOs)
                 .map(this::importTeam)
                 .collect(Collectors.joining("\n"));
-
-
     }
 
     private String importTeam(ImportTeamDTO dto) {
         Set<ConstraintViolation<ImportTeamDTO>> errors =
                 this.validator.validate(dto);
+
         if (!errors.isEmpty()) {
             return "Invalid Team";
         }
@@ -89,8 +91,5 @@ public class TeamServiceImpl implements TeamService {
         this.teamRepository.save(team);
 
         return "Successfully imported Team " + team;
-
-
     }
-
 }

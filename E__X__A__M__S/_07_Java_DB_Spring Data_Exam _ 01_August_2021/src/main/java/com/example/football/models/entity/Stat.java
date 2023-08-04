@@ -7,30 +7,24 @@ import javax.persistence.*;
 public class Stat {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", nullable = false)
-    private Long id;
+    private long id;
 
     private float shooting;
 
-
     private float passing;
-
 
     private float endurance;
 
-
     public Stat() {
-
     }
 
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
-
 
     public float getShooting() {
         return shooting;
@@ -54,5 +48,12 @@ public class Stat {
 
     public void setEndurance(float endurance) {
         this.endurance = endurance;
+    }
+
+    @Override
+    public String toString() {
+        return passing + " - " +
+                shooting + " - " +
+                endurance;
     }
 }

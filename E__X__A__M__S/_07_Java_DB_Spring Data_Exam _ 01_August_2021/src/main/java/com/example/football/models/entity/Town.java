@@ -7,25 +7,24 @@ import javax.persistence.*;
 public class Town {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", nullable = false)
-    private Long id;
+    private long id;
+
     @Column(nullable = false, unique = true)
     private String name;
 
     private int population;
+
     @Column(name = "travel_guide", nullable = false, columnDefinition = "TEXT")
     private String travelGuide;
 
     public Town() {
-
     }
 
-
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 

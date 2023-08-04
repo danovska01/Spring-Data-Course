@@ -21,10 +21,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 
-
 @Service
 public class TownServiceImpl implements TownService {
-
     private final TownRepository townRepository;
     private final Gson gson;
     private final Validator validator;
@@ -33,8 +31,13 @@ public class TownServiceImpl implements TownService {
     @Autowired
     public TownServiceImpl(TownRepository townRepository) {
         this.townRepository = townRepository;
+
         this.gson = new GsonBuilder().create();
-        this.validator = Validation.buildDefaultValidatorFactory().getValidator();
+
+        this.validator = Validation
+                .buildDefaultValidatorFactory()
+                .getValidator();
+
         this.modelMapper = new ModelMapper();
     }
 
@@ -46,25 +49,33 @@ public class TownServiceImpl implements TownService {
     @Override
     public String readTownsFileContent() throws IOException {
         Path path = Path.of("src", "main", "resources", "files", "json", "towns.json");
+
         return Files.readString(path);
     }
 
     @Override
     public String importTowns() throws IOException {
         String json = this.readTownsFileContent();
-        List<String> result = new ArrayList<>();
-        ImportTownDTO[] importTownDTOS = this.gson.fromJson(json, ImportTownDTO[].class);
-        for (ImportTownDTO importTownDTO : importTownDTOS) {
-            Set<ConstraintViolation<ImportTownDTO>> validationErrors = this.validator.validate(importTownDTO);
 
+        ImportTownDTO[] importTownDTOs = this.gson.fromJson(json, ImportTownDTO[].class);
+
+        List<String> result = new ArrayList<>();
+        for (ImportTownDTO importTownDTO : importTownDTOs) {
+            Set<ConstraintViolation<ImportTownDTO>> validationErrors =
+                    this.validator.validate(importTownDTO);
 
             if (validationErrors.isEmpty()) {
                 Optional<Town> optTown =
                         this.townRepository.findByName(importTownDTO.getName());
+
                 if (optTown.isEmpty()) {
                     Town town = this.modelMapper.map(importTownDTO, Town.class);
+
                     this.townRepository.save(town);
-                    String msg = String.format("Successfully imported Town %s - %d", town.getName(), town.getPopulation());
+
+                    String msg = String.format("Successfully imported Town %s - %d",
+                            town.getName(), town.getPopulation());
+
                     result.add(msg);
                 } else {
                     result.add("Invalid Town");
@@ -73,9 +84,7 @@ public class TownServiceImpl implements TownService {
                 result.add("Invalid Town");
             }
         }
+
         return String.join("\n", result);
-
     }
-
-
 }
