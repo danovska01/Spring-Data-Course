@@ -5,19 +5,18 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;
-
 @XmlRootElement(name = "offers")
 @XmlAccessorType(XmlAccessType.FIELD)
-public class OfferImportRootDTO {
+public class ImportOfferRootDTO {
+
 
     @XmlElement(name = "offer")
-    List<Offer_Import_DTO> offers;
+    List<ImportOfferDTO> offers;
 
-    public OfferImportRootDTO() {
-
+    public ImportOfferRootDTO() {
     }
 
-    public List<Offer_Import_DTO> getOffers() {
+    public List<ImportOfferDTO> getOffers() {
         return offers;
     }
 }

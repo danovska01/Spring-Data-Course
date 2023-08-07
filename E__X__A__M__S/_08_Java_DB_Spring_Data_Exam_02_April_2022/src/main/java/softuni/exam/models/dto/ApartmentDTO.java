@@ -4,16 +4,15 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 
 @XmlAccessorType(XmlAccessType.FIELD)
-public class ApartmentNameXmlDTO {
+public class ApartmentDTO {
 
-    private String name;
+    private Long id;
 
-    public ApartmentNameXmlDTO() {
 
+    public ApartmentDTO() {
     }
 
-    public String getName() {
-        return name;
+    public Long getId() {
+        return id;
     }
-
 }

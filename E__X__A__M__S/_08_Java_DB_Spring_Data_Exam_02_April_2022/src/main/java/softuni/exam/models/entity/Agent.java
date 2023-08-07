@@ -1,20 +1,20 @@
 package softuni.exam.models.entity;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Entity
 @Table(name = "agents")
 public class Agent {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", nullable = false)
-    private int id;
-    @Column(name = "first_name", nullable = false, unique = true)
+    private Long id;
+    @Column(unique = true, nullable = false)
     private String firstName;
-    @Column(name = "last_name", nullable = false)
+
+    @Column(nullable = false)
     private String lastName;
-    @Column(nullable = false, unique = true)
+
+    @Column(nullable = false)
     private String email;
     //One Agent may have only one Town
     @ManyToOne
@@ -25,15 +25,13 @@ public class Agent {
     private List<Offer> offers;
 
     public Agent() {
-
     }
 
-
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -67,13 +65,5 @@ public class Agent {
 
     public void setTown(Town town) {
         this.town = town;
-    }
-
-    public List<Offer> getOffers() {
-        return offers;
-    }
-
-    public void setOffers(List<Offer> offers) {
-        this.offers = offers;
     }
 }

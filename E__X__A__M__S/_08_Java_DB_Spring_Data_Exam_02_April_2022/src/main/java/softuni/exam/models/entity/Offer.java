@@ -1,56 +1,52 @@
 package softuni.exam.models.entity;
 
 import javax.persistence.*;
-import java.time.LocalDate;
+import java.math.BigDecimal;
 
 @Entity
 @Table(name = "offers")
 public class Offer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", nullable = false)
-    private int id;
+    private Long id;
+
     @Column(nullable = false)
-    private double price;
-    @Column(name = "published_on", nullable = false)
-    private LocalDate publishedOn;
+    private BigDecimal price;
+    @Column(nullable = false)
+    private String publishedOn;
 
     //One Offer may have only one Apartment, but one Apartment can be in many Offers.
     //One Offer may have only one Agent, but one Agent can have many Offers.
     @ManyToOne
-    @JoinColumn(name = "apartment_id")
     private Apartment apartment;
 
     @ManyToOne
-    @JoinColumn(name = "agent_id")
     private Agent agent;
 
     public Offer() {
-
     }
 
-
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public double getPrice() {
+    public BigDecimal getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(BigDecimal price) {
         this.price = price;
     }
 
-    public LocalDate getPublishedOn() {
+    public String getPublishedOn() {
         return publishedOn;
     }
 
-    public void setPublishedOn(LocalDate publishedOn) {
+    public void setPublishedOn(String publishedOn) {
         this.publishedOn = publishedOn;
     }
 
@@ -68,5 +64,16 @@ public class Offer {
 
     public void setAgent(Agent agent) {
         this.agent = agent;
+    }
+
+
+    @Override
+    public String toString() {
+        return String.format("Agent %s %s with offer №%d:\n" +
+                        "-Apartment area: %.2f\n" +
+                        "--Town: %s\n" +
+                        "---Price: %.2f$", this.agent.getFirstName(), this.agent.getLastName(), this.getId(),
+                this.apartment.getArea(), this.apartment.getTown().getTownName(), this.getPrice());
+
     }
 }

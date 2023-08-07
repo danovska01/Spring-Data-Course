@@ -6,11 +6,10 @@ import softuni.exam.models.entity.Town;
 
 import java.util.Optional;
 
-
 @Repository
-public interface TownRepository extends JpaRepository<Town, Integer> {
+public interface TownRepository extends JpaRepository<Town, Long> {
 
-    Optional<Town> findByName(String name);
+    Optional<Town> getTownByTownName(String town);
 
-    Town getTownByName(String name);
+    Optional<Town> findByTownName(String townName);
 }

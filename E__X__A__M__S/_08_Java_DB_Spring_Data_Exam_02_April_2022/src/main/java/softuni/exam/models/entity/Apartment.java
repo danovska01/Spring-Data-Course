@@ -1,18 +1,17 @@
 package softuni.exam.models.entity;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Entity
 @Table(name = "apartments")
 public class Apartment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", nullable = false)
-    private int id;
-
-    @Column(name = "apartment_type", nullable = false)
+    private Long id;
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
     private ApartmentType apartmentType;
+
     @Column(nullable = false)
     private double area;
 
@@ -25,14 +24,13 @@ public class Apartment {
     private List<Offer> offers;
 
     public Apartment() {
-
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -58,13 +56,5 @@ public class Apartment {
 
     public void setTown(Town town) {
         this.town = town;
-    }
-
-    public List<Offer> getOffers() {
-        return offers;
-    }
-
-    public void setOffers(List<Offer> offers) {
-        this.offers = offers;
     }
 }

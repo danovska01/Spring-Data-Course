@@ -1,19 +1,15 @@
 package softuni.exam.models.entity;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Entity
 @Table(name = "towns")
 public class Town {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", nullable = false)
-    private int id;
-
-    @Column(nullable = false, unique = true)
-    private String name;
-
+    private Long id;
+    @Column(unique = true, nullable = false)
+    private String townName;
     @Column(nullable = false)
     private int population;
 
@@ -28,20 +24,20 @@ public class Town {
     public Town() {
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getTownName() {
+        return townName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTownName(String townName) {
+        this.townName = townName;
     }
 
     public int getPopulation() {
@@ -51,22 +47,4 @@ public class Town {
     public void setPopulation(int population) {
         this.population = population;
     }
-
-    public List<Agent> getAgents() {
-        return agents;
-    }
-
-    public void setAgents(List<Agent> agents) {
-        this.agents = agents;
-    }
-
-    public List<Apartment> getApartments() {
-        return apartments;
-    }
-
-    public void setApartments(List<Apartment> apartments) {
-        this.apartments = apartments;
-    }
-
-
 }

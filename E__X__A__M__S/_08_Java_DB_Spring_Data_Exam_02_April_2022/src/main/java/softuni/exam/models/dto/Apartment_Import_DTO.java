@@ -23,7 +23,7 @@ public class Apartment_Import_DTO {
     private double area;
 
     @XmlElement(name = "town")
-    private TownNameXmlDTO town;
+    private String town;
 
     public Apartment_Import_DTO() {
 
@@ -37,7 +37,7 @@ public class Apartment_Import_DTO {
         return area;
     }
 
-    public TownNameXmlDTO getTown() {
+    public String getTown() {
         return town;
     }
 }
