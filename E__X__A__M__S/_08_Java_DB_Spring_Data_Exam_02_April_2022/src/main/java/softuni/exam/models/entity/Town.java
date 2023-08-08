@@ -13,14 +13,6 @@ public class Town {
     @Column(nullable = false)
     private int population;
 
-    //One Agent may have only one Town, but one Town may have many Agents.
-    //One Apartment may have only one Town, but one Town may have many Apartments.
-
-    @OneToMany(mappedBy = "town")
-    private List<Agent> agents;
-    @OneToMany(mappedBy = "town")
-    private List<Apartment> apartments;
-
     public Town() {
     }
 

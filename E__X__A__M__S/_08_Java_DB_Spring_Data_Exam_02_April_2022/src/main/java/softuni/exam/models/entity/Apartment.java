@@ -15,13 +15,8 @@ public class Apartment {
     @Column(nullable = false)
     private double area;
 
-    //One Apartment may have only one Town
     @ManyToOne
-    @JoinColumn(name = "town_id")
     private Town town;
-    //One Apartment can be in many Offers
-    @OneToMany(mappedBy = "apartment")
-    private List<Offer> offers;
 
     public Apartment() {
     }

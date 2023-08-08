@@ -15,8 +15,6 @@ public class Offer {
     @Column(nullable = false)
     private String publishedOn;
 
-    //One Offer may have only one Apartment, but one Apartment can be in many Offers.
-    //One Offer may have only one Agent, but one Agent can have many Offers.
     @ManyToOne
     private Apartment apartment;
 

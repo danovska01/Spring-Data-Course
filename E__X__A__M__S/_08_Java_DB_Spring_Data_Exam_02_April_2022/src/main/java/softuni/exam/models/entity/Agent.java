@@ -16,13 +16,8 @@ public class Agent {
 
     @Column(nullable = false)
     private String email;
-    //One Agent may have only one Town
     @ManyToOne
-    @JoinColumn(name = "town_id")
     private Town town;
-    //One Agent can have many Offers
-    @OneToMany(mappedBy = "agent")
-    private List<Offer> offers;
 
     public Agent() {
     }
