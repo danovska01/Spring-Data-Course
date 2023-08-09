@@ -1,6 +1,7 @@
 package softuni.exam.models.entity;
 
 import javax.persistence.*;
+import javax.transaction.Transactional;
 import java.util.Set;
 
 @Entity
@@ -96,5 +97,15 @@ public class Passenger {
 
     public void setTown(Town town) {
         this.town = town;
+    }
+
+    @Transactional
+    @Override
+    public String toString() {
+        return String.format("Passenger %s  %s\n" +
+                        "Email - %s\n" +
+                        "Phone - %s\n" +
+                        "Number of tickets - %d", this.getFirstName(), this.getLastName(), this.getEmail(),
+                this.getPhoneNumber(), this.getTickets().size());
     }
 }
