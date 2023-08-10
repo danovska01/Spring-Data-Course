@@ -103,4 +103,15 @@ public class Car {
     public int hashCode() {
         return Objects.hash(make, model, kilometers);
     }
+
+    @Override
+    public String toString() {
+
+        return "Car make - " + make + ", model" + '\n' +
+                "Kilometers - " + kilometers + '\n' +
+                "Registered on - " + registeredOn + '\n' +
+                "Number of pictures - " + pictures.size() + '\n';
+    }
+
+
 }

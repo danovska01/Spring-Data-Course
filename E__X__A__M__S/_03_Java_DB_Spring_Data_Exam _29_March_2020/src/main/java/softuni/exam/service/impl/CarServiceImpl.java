@@ -13,8 +13,11 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
+
+
 
 @Service
 public class CarServiceImpl implements CarService {
@@ -75,6 +78,33 @@ public class CarServiceImpl implements CarService {
 
     @Override
     public String getCarsOrderByPicturesCountThenByMake() {
-        return null;
+        //Export cars order by pictures count in descending order, then by make
+        //Pictures Count in Descending Order:
+        // It first compares the pictures count of two cars (car1 and car2).
+
+        // If the pictures count of car2 is greater than the pictures count of car1, it returns 1 (indicating that car2 should come after car1).
+        // If the pictures count of car1 is greater than the pictures count of car2, it returns -1 (indicating that car1 should come after car2).
+        List<Car> cars = this.carRepository.findAll();
+
+        cars.sort((car1, car2) -> {
+            int picturesCount1 = car1.getPictures().size();
+            int picturesCount2 = car2.getPictures().size();
+
+            if (picturesCount2 > picturesCount1) {
+                return 1;
+            }
+            if (picturesCount1 > picturesCount2) {
+                return -1;
+            }
+            return car1.getMake().compareTo(car2.getMake());
+        });
+        // If the pictures count of both cars is equal (or if the ordering based on pictures count has been determined),
+        // it then compares the make of the two cars using the compareTo method.
+
+        return cars.stream()
+                .map(Car::toString)
+                .collect(Collectors.joining("\n"));
+
+
     }
 }

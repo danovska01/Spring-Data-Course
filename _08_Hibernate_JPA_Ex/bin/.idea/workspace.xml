@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7853d6ce-5cd4-4c7a-ab66-e579986400e6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Demo_Spring_With_Mongo/src/main/java/com/example/demo_spring_with_mongo/models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Demo_Spring_With_Mongo/src/main/java/com/example/demo_spring_with_mongo/repositories/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Demo_Spring_With_Mongo/src/main/java/com/example/demo_spring_with_mongo/services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_11_SpringDataIntro/src/main/java/bg/softuni/accounts/AccountsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_11_SpringDataIntro/src/main/java/bg/softuni/accounts/ConsoleRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_11_SpringDataIntro/src/main/java/bg/softuni/accounts/models/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_11_SpringDataIntro/src/main/java/bg/softuni/accounts/models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_11_SpringDataIntro/src/main/java/bg/softuni/accounts/repositories/AccountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_11_SpringDataIntro/src/main/java/bg/softuni/accounts/repositories/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_11_SpringDataIntro/src/main/java/bg/softuni/accounts/services/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_11_SpringDataIntro/src/main/java/bg/softuni/accounts/services/AccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_11_SpringDataIntro/src/main/java/bg/softuni/accounts/services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_11_SpringDataIntro/src/main/java/bg/softuni/accounts/services/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_11_SpringDataIntro/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_11_SpringDataIntro/src/test/java/bg/softuni/accounts/AccountsApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2SbuJVvwCZDWzITnTDfin3msamD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/kristina/IdeaProjects/Spring-Data/_08_Hibernate_JPA_Ex&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application._000_HibernateMain">
+    <configuration name="_000_HibernateMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_000_HibernateMain" />
+      <module name="introtohibernate" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_10_IncreaseSalaries" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_10_IncreaseSalaries" />
+      <module name="introtohibernate" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_11_FindEmployeesByFirstName" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_11_FindEmployeesByFirstName" />
+      <module name="introtohibernate" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_12_EmployeesMaximumSalaries" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_12_EmployeesMaximumSalaries" />
+      <module name="introtohibernate" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_13_RemoveTowns" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_13_RemoveTowns" />
+      <module name="introtohibernate" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application._000_HibernateMain" />
+        <item itemvalue="Application._13_RemoveTowns" />
+        <item itemvalue="Application._12_EmployeesMaximumSalaries" />
+        <item itemvalue="Application._11_FindEmployeesByFirstName" />
+        <item itemvalue="Application._10_IncreaseSalaries" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7853d6ce-5cd4-4c7a-ab66-e579986400e6" name="Changes" comment="" />
+      <created>1689427533627</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1689427533627</updated>
+      <workItem from="1689427534623" duration="6939000" />
+      <workItem from="1689490944078" duration="4008000" />
+      <workItem from="1689494976928" duration="5297000" />
+      <workItem from="1689515444258" duration="135000" />
+      <workItem from="1689515596872" duration="68000" />
+      <workItem from="1689612010110" duration="127000" />
+      <workItem from="1690141537274" duration="131000" />
+    </task>
+    <task id="LOCAL-00001" summary="add one more task">
+      <option name="closed" value="true" />
+      <created>1689494461831</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1689494461831</updated>
+    </task>
+    <task id="LOCAL-00002" summary="task 9">
+      <option name="closed" value="true" />
+      <created>1689495463579</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1689495463579</updated>
+    </task>
+    <task id="LOCAL-00003" summary="task 11">
+      <option name="closed" value="true" />
+      <created>1689497004215</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1689497004215</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add modifications">
+      <option name="closed" value="true" />
+      <created>1689612128262</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689612128262</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="add one more task" />
+    <MESSAGE value="task 9" />
+    <MESSAGE value="task 11" />
+    <MESSAGE value="add modifications" />
+    <option name="LAST_COMMIT_MESSAGE" value="add modifications" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/_02_ChangeCasing.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/_02_ChangeCasing.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/_02_ChangeCasing.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/_03_CheckEmployeeExists.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/_05_EmployeesFromDepartment.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/_05_EmployeesFromDepartment.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/_05_EmployeesFromDepartment.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/_06_InsertAddress.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/_06_InsertAddress.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/_10_IncreaseSalaries.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/_10_IncreaseSalaries.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/_02_ChangeCasing.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/_02_ChangeCasing.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/_04_RichEmployeesFirstNames.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/_07_ListAddressees.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/_12_EmployeesMaximumSalaries.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/_12_EmployeesMaximumSalaries.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/_13_RemoveTowns.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/_13_RemoveTowns.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/_13_RemoveTowns.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/_13_RemoveTowns.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
